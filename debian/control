@@ -5,6 +5,7 @@ Maintainer: Michael Davidsaver <mdavidsaver@bnl.gov>
 Build-Depends-Indep: openjdk-6-jdk, imagej, libcaj-java,
 Build-Depends: debhelper (>= 7.0.50~),
 Standards-Version: 3.8.0
+Vcs-Git: http://epics.nsls2.bnl.gov/git/imagej-areadetector.git
 Homepage: http://cars9.uchicago.edu/software/epics/areaDetector.html
 
 Package: imagej-areadetector
