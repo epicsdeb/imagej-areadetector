@@ -1,0 +1,18 @@
+Source: imagej-areadetector
+Section: devel
+Priority: extra
+Maintainer: Michael Davidsaver <mdavidsaver@bnl.gov>
+Build-Depends-Indep: openjdk-6-jdk, imagej, libcaj-java,
+Build-Depends: debhelper (>= 7.0.50~),
+Standards-Version: 3.8.0
+Homepage: http://cars9.uchicago.edu/software/epics/areaDetector.html
+
+Package: imagej-areadetector
+Architecture: all
+Depends: imagej,
+         ${java:Depends}, ${misc:Depends},
+Recommends: ${java:Recommends}
+Description: Camera stuff for EPICS
+ .
+ An plugin for the ImageJ viewer to allow it to
+ read live images from an IOC.

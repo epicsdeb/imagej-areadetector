@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+
+export DH_VERBOSE=1
+
+CLASSPATH := /usr/share/java/jca.jar:/usr/share/java/caj.jar:/usr/share/java/ij.jar  
+
+binary binary-arch binary-indep build install clean:
+	dh $@
+install: build
+binary-arch binary-indep: install
+binary: binary-arch binary-indep
+
+override_dh_auto_build:
+	javac -cp $(CLASSPATH) EPICS_AD_Viewer.java Dynamic_Profiler.java
+
+override_dh_auto_clean:
+	rm -f *.class
+	dh_auto_clean
