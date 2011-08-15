@@ -10,7 +10,7 @@ Homepage: http://cars9.uchicago.edu/software/epics/areaDetector.html
 
 Package: imagej-areadetector
 Architecture: all
-Depends: imagej,
+Depends: imagej, libcaj-java,
          ${java:Depends}, ${misc:Depends},
 Recommends: ${java:Recommends}
 Description: Camera stuff for EPICS
