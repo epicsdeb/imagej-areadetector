@@ -1,3 +1,9 @@
+imagej-areadetector (1.7-3) unstable; urgency=low
+
+  * Rebuild with default jdk
+
+ -- Leon Flaks <flaks@bnl.gov>  Tue, 15 Mar 2016 15:05:42 -0400
+
 imagej-areadetector (1.7-2) unstable; urgency=low
 
   * missing caj dependency
